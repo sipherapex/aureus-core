@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Aureus Core Security Policy
+    url: https://github.com/aureus/aureus/blob/master/SECURITY.md
+    about: View security policy
+  - name: Aureus Core Developers
+    url: https://aureuscore.org
+    about: Aureus Core homepage
