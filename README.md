@@ -1,7 +1,8 @@
 Aureus Core integration/staging tree
 =====================================
 
-https://aureuscore.org
+https://aura.gt.tc
+https://aurascan.gt.tc
 
 For an immediately usable, binary version of the Aureus Core software, see
 https://aureuscore.org/en/download/.
