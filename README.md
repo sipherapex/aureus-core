@@ -1,80 +1,72 @@
-Aureus Core integration/staging tree
-=====================================
+# Aureus Core [AUR] 
+### The Institutional-Grade SHA-256 Layer 1 Blockchain
 
-https://auracoin.gt.tc
-https://aurascan.gt.tc
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/Release-v0.2x.Stable-orange.svg)]()
 
-For an immediately usable, binary version of the Aureus Core software, see
-https://auracoin.gt.tc
+Aureus Core is a high-performance, security-centric Layer 1 blockchain designed for the next generation of decentralized value transfer. Built on a modernized Bitcoin Core architecture, Aureus combines the industrial-strength security of **SHA-256 Proof-of-Work** with advanced cryptographic features like **Taproot**, **SegWit**, and **V2 P2P Transport Encryption**.
 
-What is Aureus Core?
----------------------
+---
 
-Aureus Core connects to the Aureus peer-to-peer network to download and fully
-validate blocks and transactions. It also includes a wallet and graphical user
-interface, which can be optionally built.
+## 🌐 Official Resources
+| Resource | Link |
+| :--- | :--- |
+| **Official Website** | [https://auracoin.gt.tc](https://auracoin.gt.tc) |
+| **Block Explorer** | [https://aurascan.gt.tc](https://aurascan.gt.tc) |
+| **Source Code** | [https://github.com/sipherapex/aureus-core](https://github.com/sipherapex/aureus-core) |
+| **Technical Documentation** | [Explore /doc folder](https://github.com/sipherapex/aureus-core/tree/master/doc) |
 
-Further information about Aureus Core is available in the [doc folder](/doc).
+---
 
-License
--------
+## ⚙️ Technical Specifications
+* **Ticker:** `AUR`
+* **Algorithm:** SHA-256 (ASIC-Optimized)
+* **Max Supply:** 31000000 AUR
+* **Block Maturity:** 100 Confirmations
+* **Network Ports:** P2P: `11995` 
 
-Aureus Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
-information or see https://opensource.org/license/MIT.
+---
 
-Development Process
--------------------
+## 🚀 Key Features
+* **Taproot & Schnorr Signatures:** Enhanced privacy and smart contract efficiency.
+* **V2 P2P Transport:** Native node-to-node encryption (BIP324) to prevent traffic analysis and MitM attacks.
+* **Modern Descriptor Wallets:** Moving beyond legacy `wallet.dat` for robust hardware and multi-sig support.
+* **Strategic Ecosystem Reserve:** 500,000 AUR dedicated to infrastructure, exchange liquidity, and long-term network stability.
 
-The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/sipherapex/aureus/tags) are created
-regularly from release branches to indicate new official, stable release versions of Aureus Core.
+---
 
-The https://github.com/aureus-core/gui repository is used exclusively for the
-development of the GUI. Its master branch is identical in all monotree
-repositories. Release branches and tags do not exist, so please do not fork
-that repository unless it is for development reasons.
+## 🛠 Installation & Build Support
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
-and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
+### Windows (Pre-compiled)
+Download the latest graphical interface (QT Wallet) from our [Releases Page](https://github.com/sipherapex/aureus-core/releases).
 
-Testing
--------
+### Linux (Build from Source)
+Aureus Core is designed to be built using the `cmake` system for maximum hardware optimization.
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
+```bash
+# Install dependencies
+sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev
 
-### Automated Testing
+# Clone and Build
+git clone [https://github.com/sipherapex/aureus-core.git](https://github.com/sipherapex/aureus-core.git)
+cd aureus-core
+mkdir build && cd build
+cmake ..
+make -j$(nproc)
+Binaries (aureusd and aureus-cli) will be generated in the /src directory.
 
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled during the generation of the build system) with: `ctest`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
+🔒 Security & Governance
+Aureus Core implements Hardcoded Checkpoints to protect the chain from 51% reorgs during early-stage growth. The network is supported by high-availability V-Seeds ensuring 99.9% global connectivity.
 
-There are also [regression and integration tests](/test), written
-in Python.
-These tests can be run (if the [test dependencies](/test) are installed) with: `build/test/functional/test_runner.py`
-(assuming `build` is your build directory).
+🤝 Community & Ecosystem
+Join our growing community to stay updated on the latest developments, token issuance tools, and exchange listings.
 
-The CI (Continuous Integration) systems make sure that every pull request is tested on Windows, Linux, and macOS.
-The CI must pass on all commits before merge to avoid unrelated CI failures on new pull requests.
+Twitter (X): https://x.com/sipher_apex
 
-### Manual Quality Assurance (QA) Testing
+Telegram: https://t.me/AUREUS_AUR
 
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
+📄 License
+Aureus Core is released under the terms of the MIT License.
 
-Translations
-------------
-
-Changes to translations as well as new translations can be submitted to
-[Aureus Core's Transifex page](https://aurascan.gt.tc).
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+Built by developers, for the future of decentralized finance.
