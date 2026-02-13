@@ -5,7 +5,7 @@ https://auracoin.gt.tc
 https://aurascan.gt.tc
 
 For an immediately usable, binary version of the Aureus Core software, see
-https://aureuscore.org/en/download/.
+https://auracoin.gt.tc
 
 What is Aureus Core?
 ---------------------
@@ -26,7 +26,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built (see `doc/build-*.md` for instructions) and tested, but it is not guaranteed to be
-completely stable. [Tags](https://github.com/aureus/aureus/tags) are created
+completely stable. [Tags](https://github.com/sipherapex/aureus/tags) are created
 regularly from release branches to indicate new official, stable release versions of Aureus Core.
 
 The https://github.com/aureus-core/gui repository is used exclusively for the
@@ -71,7 +71,7 @@ Translations
 ------------
 
 Changes to translations as well as new translations can be submitted to
-[Aureus Core's Transifex page](https://explore.transifex.com/aureus/aureus/).
+[Aureus Core's Transifex page](https://aurascan.gt.tc).
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.
