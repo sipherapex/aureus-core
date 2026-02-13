@@ -66,6 +66,8 @@ Twitter (X): https://x.com/sipher_apex
 
 Telegram: https://t.me/AUREUS_AUR
 
+Discord: https://discord.gg/BVru9jAzgk
+
 📄 License
 Aureus Core is released under the terms of the MIT License.
 
