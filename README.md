@@ -52,9 +52,12 @@ sudo apt-get install build-essential libtool autotools-dev automake pkg-config l
 git clone [https://github.com/sipherapex/aureus-core.git](https://github.com/sipherapex/aureus-core.git)
 cd aureus-core
 mkdir build && cd build
-cmake ..
+cmake -DBUILD_AUREUS_TESTS=OFF -DBUILD_AUREUS_QT=OFF ..
 make -j$(nproc)
 Binaries (aureusd and aureus-cli) will be generated in the /src directory.
+
+Technical Fix for Server Wallets:
+Since some internal core components and scripts in this version are mapped to legacy names, you may encounter errors when calling wallet functions. To bypass this and ensure the Aureus Server Wallet activates correctly, create symbolic links to redirect legacy calls to the new binaries:
 
 🔒 Security & Governance
 Aureus Core implements Hardcoded Checkpoints to protect the chain from 51% reorgs during early-stage growth. The network is supported by high-availability V-Seeds ensuring 99.9% global connectivity.
