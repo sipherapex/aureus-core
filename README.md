@@ -52,7 +52,13 @@ sudo apt-get install build-essential libtool autotools-dev automake pkg-config l
 git clone [https://github.com/sipherapex/aureus-core.git](https://github.com/sipherapex/aureus-core.git)
 cd aureus-core
 mkdir build && cd build
-cmake -DBUILD_AUREUS_TESTS=OFF -DBUILD_AUREUS_QT=OFF ..
+
+ln -sf src/bitcoin-wallet.cpp src/aureus-wallet.cpp
+ln -sf src/init/bitcoin-wallet.cpp src/init/aureus-wallet.cpp
+OR
+ln -s ${PROJECT_ROOT}/src/bitcoin-wallet.cpp ${PROJECT_ROOT}/src/aureus-wallet.cpp
+ln -s ${PROJECT_ROOT}/src/init/bitcoin-wallet.cpp ${PROJECT_ROOT}/src/init/aureus-wallet.cpp
+cmake .. -DENABLE_WALLET=ON -DBUILD_WALLET=ON -DBUILD_GUI=OFF -DENABLE_IPC=OFF
 make -j$(nproc)
 Binaries (aureusd and aureus-cli) will be generated in the /src directory.
 
