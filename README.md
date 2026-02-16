@@ -57,7 +57,7 @@ OR
 ln -s ${PROJECT_ROOT}/src/bitcoin-wallet.cpp ${PROJECT_ROOT}/src/aureus-wallet.cpp
 ln -s ${PROJECT_ROOT}/src/init/bitcoin-wallet.cpp ${PROJECT_ROOT}/src/init/aureus-wallet.cpp
 mkdir build && cd build
-cmake .. -DENABLE_WALLET=ON -DBUILD_WALLET=ON -DBUILD_GUI=OFF -DENABLE_IPC=OFF
+cmake .. -DENABLE_WALLET=ON -DBUILD_WALLET=ON -DBUILD_GUI=OFF -DENABLE_IPC=OFF -DBUILD_AUREUS_TESTS=OFF
 make -j$(nproc)
 Binaries (aureusd and aureus-cli) will be generated in the /src directory.
 
