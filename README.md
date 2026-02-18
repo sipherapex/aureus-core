@@ -59,7 +59,16 @@ ln -s ${PROJECT_ROOT}/src/init/bitcoin-wallet.cpp ${PROJECT_ROOT}/src/init/aureu
 mkdir build && cd build
 cmake .. -DENABLE_WALLET=ON -DBUILD_WALLET=ON -DBUILD_GUI=OFF -DENABLE_IPC=OFF -DBUILD_AUREUS_TESTS=OFF
 make -j$(nproc)
-Binaries (aureusd and aureus-cli) will be generated in the /src directory.
+Binaries (aureusd and aureus-cli) will be generated in the /bin directory.
+
+### 🐧 Linux (Pre-compiled Binaries)
+For quick deployment, we provide pre-compiled binaries for **Ubuntu 24.04 LTS**.
+1. Go to the [Releases Page](https://github.com/sipherapex/aureus-core/releases).
+2. Download `aureusd and aureus-cli`.
+   chmod +x aureusd aureus-cli
+   ./aureusd -daemon
+
+
 
 Technical Fix for Server Wallets:
 Since some internal core components and scripts in this version are mapped to legacy names, you may encounter errors when calling wallet functions. To bypass this and ensure the Aureus Server Wallet activates correctly, create symbolic links to redirect legacy calls to the new binaries:
