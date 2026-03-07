@@ -86,3 +86,43 @@ Discord: https://discord.gg/BVru9jAzgk
 Aureus Core is released under the terms of the MIT License.
 
 Built by developers, for the future of decentralized finance.
+
+🏛️ THE ARCHITECTURE OF SCARCITY: 6,000,000 $AUR SECURED
+
+To our community and the SHA-256 enthusiasts, transparency is the cornerstone of the Aureus Empire. We are officially releasing the details of our Strategic Reserve and the Whitepaper to clarify our long-term monetary policy.
+
+I. Monetary Policy & Strategic Ledger
+The AUREUS protocol enforces a strictly deflationary cap of 31M $AUR. To ensure terminal scarcity and ecosystem stability, 6,000,000 $AUR is locked across twelve (12) verifiable strategic vaults.
+
+The Explorer never lies. Transparency is not an option; it is built into our code.
+
+Quote
+TOTAL ESCROW RESERVE: 6,000,000 $AUR
+PROOF OF SCARCITY: VERIFIED ON-CHAIN
+
+Strategic Vault Schedule:
+Code:
+VAULT | VERIFIABLE PUBLIC ADDRESS                         | AMOUNT  | UNLOCK
+V_01  | 5EuFGUFXkDt8xeFmxGZ6MdTS7Ghf2sUtks                | 500,000 | 2031
+V_02  | AVqnrHmUAYgir1ErXvmV8Zfba1H5Wj4Tr5                | 500,000 | 2035
+V_03  | aur1qdfddpt8p7ec2r76wey0kc6n9ulywh5tdwfzyu3       | 500,000 | 2037
+V_04  | aur1pl47gsjm4nhn7r9lphlhemphagxu6gfmy...          | 500,000 | 2039
+V_05  | 5DoKULL5SWiUHpoZ9dycK2QMP9UQwpQxVX                | 500,000 | 2042
+V_06  | aur1qdrr29cujn80jr6n290wd2c3ua32yne8nl9hc8w       | 500,000 | 2044
+V_07  | AVvkisUarGTp91b3WBqFHUz88VsB4vgPun                | 500,000 | 2045
+V_08  | Ac47eeZSLmxQAwvFpsnwgZbEvayd6ZrW1m                | 500,000 | 2046
+V_09  | ALyGD2RJkRaNb42JqWGnzJSYnPu11LmU95                | 500,000 | 2047
+V_10  | 5QMd6s1zpxv2n69sJmyfnuvrSc3toPsTTE                | 500,000 | 2048
+V_11  | AR7oERzAxoAyhmVi3dKUpf4ucxYmFnQPJG                | 500,000 | 2049
+V_12  | 59PZ5oMpMVRDVLc6z8T7vsnVFFSMDRJmaH                | 500,000 | 2050
+
+II. Mining Opportunities
+With the escrow phase concluded, we want to highlight that over 20,000,000 $AUR are ready to be mined with absolute security. The network is open, decentralized, and governed by mathematical certainty.
+
+III. Official Whitepaper
+Our Whitepaper details the technical roadmap, Atomic Swap infrastructure, and our vision for a Sovereign Financial Layer.
+👉 Read the AUREUS CORE Whitepaper Here
+
+We welcome technical scrutiny based on data. Let the work prove the value.
+
+The Explorer never lies. Stay Sovereign. Stay Aureus 🔱
