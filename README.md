@@ -55,7 +55,7 @@ mkdir build && cd build
 cp ../src/bitcoin-wallet.cpp ../src/aureus-wallet.cpp
 cp ../src/init/bitcoin-wallet.cpp ../src/init/aureus-wallet.cpp
 cmake .. -DENABLE_WALLET=ON -DBUILD_WALLET=ON -DBUILD_GUI=OFF -DENABLE_IPC=OFF -DBUILD_AUREUS_TESTS=OFF
-make -j$(nproc)
+make aureusd aureus-cli aureus-tx -j$(nproc)
 Binaries (aureusd and aureus-cli) will be generated in the /bin directory.
 
 ### 🐧 Linux (Pre-compiled Binaries)
