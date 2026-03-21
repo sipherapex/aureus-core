@@ -147,6 +147,10 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possib
         vSeeds.emplace_back("185.27.135.219");
+        vSeeds.emplace_back("93.184.156.45");
+        vSeeds.emplace_back("185.250.241.209");
+        vSeeds.emplace_back("201.76.43.61");
+        vSeeds.emplace_back("65.109.147.252");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,23);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
@@ -162,6 +166,12 @@ public:
         m_is_mockable_chain = false;
 
         m_assumeutxo_data = {
+            {
+                .height = 44'353,
+                .hash_serialized = AssumeutxoHash{uint256{"00000000000000228f3ccdaf8024cadee10a9dde6f5a61623e561e7f4f63bcfb"}},
+                .m_chain_tx_count = 44'353,
+                .blockhash = uint256{"00000000000000228f3ccdaf8024cadee10a9dde6f5a61623e561e7f4f63bcfb"},
+            }
         };
 
         chainTxData = ChainTxData{
