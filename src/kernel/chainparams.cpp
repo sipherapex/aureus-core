@@ -119,8 +119,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].threshold = 1815; // 90%
         consensus.vDeployments[Consensus::DEPLOYMENT_TAPROOT].period = 2016;
 
-        consensus.nMinimumChainWork = uint256{"000000000000000000000000000000000000000000000022522d534d1633529e"}; // 42586
-        consensus.defaultAssumeValid = uint256{"0000000000000000a85e446073d735fb2b69faba5702cc49b95637623a73a607"}; // 42586
+        consensus.nMinimumChainWork = uint256{"000000000000000000000000000000000000000000000046b26663e5f04bce15"}; // 43350
+        consensus.defaultAssumeValid = uint256{"00000000000000099e5fdb3c802c0b1c55f2ca1ed019b6feae89f7db58c927c1"}; // 43350
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
