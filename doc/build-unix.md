@@ -1,5 +1,13 @@
 UNIX BUILD NOTES
 ====================
+Build Cap'n Proto 1.4.0
+
+curl -O https://capnproto.org/capnproto-c++-1.4.0.tar.gz
+tar zxf capnproto-c++-1.4.0.tar.gz
+cd capnproto-c++-1.4.0
+./configure
+make -j6 check
+sudo make install
 Some notes on how to build Aureus Core in Unix.
 
 (For BSD specific instructions, see `build-*bsd.md` in this directory.)
